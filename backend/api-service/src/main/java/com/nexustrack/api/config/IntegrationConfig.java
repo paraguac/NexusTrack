@@ -2,13 +2,14 @@ package com.nexustrack.api.config;
 
 import org.springframework.stereotype.Component;
 import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.LoaderOptions;
 import org.yaml.snakeyaml.constructor.Constructor;
 
 @Component
 public class IntegrationConfig {
 
     public IntegrationSettings load(String yamlContent) {
-        Yaml yaml = new Yaml(new Constructor(IntegrationSettings.class));
+        Yaml yaml = new Yaml(new Constructor(IntegrationSettings.class, new LoaderOptions()));
         return yaml.load(yamlContent);
     }
 
