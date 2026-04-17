@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: nexustrack
+      POSTGRES_USER: nexustrack
+      POSTGRES_PASSWORD: nexustrack
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api-service:
+    build: backend/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/nexustrack
+      SPRING_DATASOURCE_USERNAME: nexustrack
+      SPRING_DATASOURCE_PASSWORD: nexustrack
+
+  report-service:
+    build: backend/
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/nexustrack
+      SPRING_DATASOURCE_USERNAME: nexustrack
+      SPRING_DATASOURCE_PASSWORD: nexustrack
+
+  notification-service:
+    build: notification-service/
+    ports:
+      - "3001:3001"
+
+volumes:
+  pgdata:

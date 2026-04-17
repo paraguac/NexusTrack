@@ -1,0 +1,12 @@
+# Created at 2026-04-16T21:24:00.256
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+
+# Created at 2026-04-16T21:24:00.264
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/Users/pararohan/.m2/repository/com/thoughtworks/xstream/xstream/1.4.15/xstream-1.4.15.jar)
+
+# Created at 2026-04-16T21:24:00.271
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+
+# Created at 2026-04-16T21:24:00.276
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+

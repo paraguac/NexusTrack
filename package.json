@@ -1,0 +1,19 @@
+{
+  "name": "nexustrack",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "notification-service",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Run tests in individual workspaces\""
+  },
+  "overrides": {
+    "react-scripts": {
+      "@babel/preset-env": "7.20.2",
+      "babel-preset-current-node-syntax": "1.0.1"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+com/nexustrack/api/controller/ProjectController.class
+com/nexustrack/api/model/Project.class
+com/nexustrack/api/service/TemplateService.class
+com/nexustrack/api/config/IntegrationConfig$IntegrationSettings.class
+com/nexustrack/api/service/ProjectService.class
+com/nexustrack/api/config/IntegrationConfig.class
+com/nexustrack/api/controller/TaskController.class
+com/nexustrack/api/repository/TaskRepository.class
+com/nexustrack/api/service/TaskService.class
+com/nexustrack/api/NexusTrackApplication.class
+com/nexustrack/api/service/DataSerializer.class
+com/nexustrack/api/model/Task.class
+com/nexustrack/api/repository/ProjectRepository.class

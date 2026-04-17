@@ -1,0 +1,12 @@
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/service/ProjectService.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/config/IntegrationConfig.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/NexusTrackApplication.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/repository/TaskRepository.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/model/Project.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/repository/ProjectRepository.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/model/Task.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/controller/ProjectController.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/service/DataSerializer.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/controller/TaskController.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/service/TemplateService.java
+/Users/pararohan/Documents/www/pg/NexusTrack/backend/api-service/src/main/java/com/nexustrack/api/service/TaskService.java
