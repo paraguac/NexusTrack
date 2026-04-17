@@ -8,8 +8,16 @@ import org.yaml.snakeyaml.constructor.Constructor;
 @Component
 public class IntegrationConfig {
 
+    // Integration settings payloads are small config documents, so cap YAML size at 1MB.
+    private static final int YAML_CODE_POINT_LIMIT = 1_048_576;
+    // Keep alias expansion bounded to limit resource amplification during parsing.
+    private static final int YAML_MAX_ALIASES = 50;
+
     public IntegrationSettings load(String yamlContent) {
-        Yaml yaml = new Yaml(new Constructor(IntegrationSettings.class, new LoaderOptions()));
+        LoaderOptions loaderOptions = new LoaderOptions();
+        loaderOptions.setCodePointLimit(YAML_CODE_POINT_LIMIT);
+        loaderOptions.setMaxAliasesForCollections(YAML_MAX_ALIASES);
+        Yaml yaml = new Yaml(new Constructor(IntegrationSettings.class, loaderOptions));
         return yaml.load(yamlContent);
     }
 
