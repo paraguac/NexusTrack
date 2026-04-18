@@ -22,6 +22,7 @@
         <log4j-core.version>2.25.4</log4j-core.version>
         <commons-compress.version>1.28.0</commons-compress.version>
         <jackson-core.version>2.21.2</jackson-core.version>
+        <spring-boot-autoconfigure.version>2.5.15</spring-boot-autoconfigure.version>
     </properties>
 
     <modules>
@@ -51,6 +52,11 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-core</artifactId>
                 <version>${jackson-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <version>${spring-boot-autoconfigure.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
