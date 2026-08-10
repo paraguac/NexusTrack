@@ -10,7 +10,7 @@ A SaaS project management platform built for engineering teams. NexusTrack helps
 - **File Attachments** — Attach documents, images, and other files directly to tasks and projects for centralized reference.
 - **Team Notifications** — Keep everyone in the loop with email and Slack notifications for task assignments, status changes, comments, and deadlines.
 
-## Tech Stack
+## TechStack
 
 | Layer                | Technology                  |
 | -------------------- | --------------------------- |
